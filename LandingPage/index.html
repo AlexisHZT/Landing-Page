@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<header>
+    <h1></h1>
+    <nav>
+        <a href="#">Iniciar sesion</a>
+        <a href="#">Empezar</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a href="vista2.html">Contacto</a>
+                <a href="">Sobre nosotros</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Planificación de la vida, facilitando convertir los sueños en realidad</h2>
+    <p>Obtenga ofertas exclusivas al comprar cualquier plan</p>
+    <form>
+        <input type="email" placeholder="Tu correo electronico">
+        <button type="submit">Iniciar sesion</button>
+    </form>
+</section>
+
+<section class="plans">
+    <h3>Planes destacados</h3>
+    <div class="plan-cards">
+        <div class="plan-card" style="background-color: #A3F7B5;">
+            <h4>Impulso del dinero</h4>
+            <p>Tract Premium lo ayuda a comenzar a cubrir información sobre inversiones ahorradoras.</p>
+            <div class="rate">7.20%</div>
+            <button class="button" onclick="toggleInfo()">Más información</button>
+            
+            <!-- Información adicional oculta -->
+            <div id="more-info" style="display: none; margin-top: 10px;">
+                <p>El impulso del dinero es una estrategia económica utilizada para estimular el crecimiento y la actividad económica. Se basa en la idea de que al aumentar la cantidad de dinero en circulación o al realizar inversiones significativas, se puede activar la economía y generar efectos positivos en diversos sectores. Este impulso puede tomar varias formas</p>
+            </div>
+            
+        </div>
+        <div class="plan-card" style="background-color: #000; color: white;">
+            <h4>A largo plazo</h4>
+            <p>Crear una visión. Para empezar, imagina la vida de tus sueños..</p>
+            <div class="rate">7.20%</div>
+            <button class="button" onclick="toggleInfo()">Más información</button>
+            
+            <!-- Información adicional oculta -->
+            <div id="more-info" style="display: none; margin-top: 10px;">
+                <p></p>
+            </div>
+        </div>
+        <div class="plan-card" style="background-color: #E1BEE7;">
+            <h4>Enfocado</h4>
+            <p>Concéntrese Sin embargo, la planificación de la vida puede servir como hoja de ruta o guía..</p>
+            <div class="rate">7.20%</div>
+            <button class="button" onclick="toggleInfo()">Más información</button>
+            
+            <!-- Información adicional oculta -->
+            <div id="more-info" style="display: none; margin-top: 10px;">
+                <p></p>
+            </div>
+        </div>
+        <div class="plan-card" style="background-color: #FFF9C4;">
+            <h4>Renta Fija</h4>
+            <p>Obtenga múltiples beneficios, opción de suma global y devoluciones garantizadas..</p>
+            <div class="rate">7.20%</div>
+            <h4></h4>
+            <button class="button" onclick="toggleInfo()">Más información</button>
+            
+            <!-- Información adicional oculta -->
+            <div id="more-info" style="display: none; margin-top: 10px;">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+<footer>
+    <a href="#">Terms Policy</a>
+    <a href="#">Customer Story</a>
+</footer>
+<script>
+    function toggleInfo() {
+    var info = document.getElementById("more-info");
+    if (info.style.display === "none" || info.style.display === "") {
+        info.style.display = "block";
+    } else {
+        info.style.display = "none";
+    }
+}
+
+document.querySelector('.dropbtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const dropdownContent = this.nextElementSibling;
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+
+
+</script>
+</html>
